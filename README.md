@@ -24,7 +24,7 @@ Configuration Directives
         "trap_uri":"/abc/abc.html",                  -- 诱捕路径
         "trap_args":"id=1",                          -- 诱捕参数
 
-        "action":"ALLOW",                            -- 执行动作，支持"ALLOW","DENY","REDIRECT", "ROBOT", "RESET_CONNECTION","PASS"
+        "action":"ALLOW",                            -- 执行动作，支持"ALLOW", "DENY","REDIRECT", "ROBOT", "RESET_CONNECTION","PASS"
         "action_meta": 403                           -- 执行动作的附属信息，若action为DENY，action_meta为响应码，若action为REDIRECT，action_meta为重定向url
 ```
 
@@ -175,8 +175,8 @@ cookie机制开关，支持true和false，默认true
 
 **context:** *twaf_anti_mail_crawler*
 
-被认定为恶意爬虫时执行的动作，默认拦截"DNEY"
-
+被认定为恶意爬虫时执行的动作，默认拦截"DNEY"  
+动作支持拦截("DENY"),重定向("REDIRECT"),连接重置("RESET_CONNECTION")，放行("PASS")
 ###action_meta
 **syntax:** *"action_meta": number|string*
 
