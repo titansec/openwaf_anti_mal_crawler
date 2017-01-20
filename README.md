@@ -24,8 +24,8 @@ Configuration Directives
         "trap_uri":"/abc/abc.html",                  -- 诱捕路径
         "trap_args":"id=1",                          -- 诱捕参数
 
-        "action":"ALLOW",                            -- 执行动作，支持"ALLOW", "DENY","REDIRECT", "ROBOT", "RESET_CONNECTION","PASS"
-        "action_meta": 403                           -- 执行动作的附属信息，若action为DENY，action_meta为响应码，若action为REDIRECT，action_meta为重定向url
+        "action":"ALLOW",                            -- 执行动作
+        "action_meta": 403                           -- 执行动作的附属信息
 ```
 
 ###state
